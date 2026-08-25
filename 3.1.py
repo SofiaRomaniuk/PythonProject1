@@ -12,8 +12,8 @@ elif operations == "*":
 elif operations == "/":
  if num1 == 0 or num2 == 0 :
     print("неможливо поділити на 0")
-else:
- result = num1 / num2
- print("результат:", result)
+ else:
+  result = num1 / num2
+  print("результат", result)
 
 
