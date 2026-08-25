@@ -10,10 +10,10 @@ elif operations == "-":
 elif operations == "*":
     result = num1 * num2
 elif operations == "/":
-    result = num1 / num2
+ if num1 == 0 or num2 == 0 :
+    print("неможливо поділити на 0")
 else:
-    result = "невідома дія"
-
-print("результат:", result)
+ result = num1 / num2
+ print("результат:", result)
 
 
