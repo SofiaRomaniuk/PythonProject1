@@ -13,5 +13,5 @@ while True:
         print(num1 / num2)
     answer = input("Продовжити?")
 
-    if answer != "yes":
+    if answer != "yes" and answer != "y":
         break
