@@ -1,12 +1,17 @@
+print("enter your number:")
 seconds = int(input())
+days,remainder = divmod(seconds, 24 * 60 * 60)
+hours,remainder = divmod(remainder, 60 * 60)
+minutes ,remainder = divmod(remainder, 60)
 
-days = seconds // 86400
-seconds %= 86400
+if days % 10 == 1 and days % 100 != 0 and days % 100 !=11:
+    days_word ="день"
+elif days % 10 in [2,3,4] and days % 100 not in [12,13,14]:
+    days_word = "дні"
+else:
+    days_word = "днів"
 
-hours = seconds // 3600
-seconds %= 3600
+if seconds < 0 or seconds >= 8640000:
+    print("помилка")
 
-minutes = seconds // 60
-seconds %= 60
-
-print(f"{days} дні, {hours:02}:{minutes:02}:{seconds:02}")
+print(f"{days} {days_word} {hours:02d}:{minutes:02d}:{seconds:02d}")
