@@ -2,7 +2,7 @@ print("enter your number:")
 seconds = int(input())
 days,remainder = divmod(seconds, 24 * 60 * 60)
 hours,remainder = divmod(remainder, 60 * 60)
-minutes ,remainder = divmod(remainder, 60)
+minutes ,remainder = divmod(remainder,60)
 
 if days % 10 == 1 and days % 100 != 0 and days % 100 !=11:
     days_word ="день"
