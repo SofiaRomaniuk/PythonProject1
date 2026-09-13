@@ -1,11 +1,13 @@
-number = int(input("Enter a number: "))
+number  = int(input("Enter a number: "))
 
-while number >=9:
-     digit = str(number)
-     number = 1
+while number >9:
+    result = 1
 
-     for digit in digit:
-         number*=10 + int(digit)
+    while number > 0:
+         digit = number % 10
+         result = result * digit
+         number = number // 10
 
+    number = result
 
-print(number)
+print(result)
