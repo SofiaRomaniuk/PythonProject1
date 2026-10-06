@@ -3,7 +3,7 @@ from inspect import isgenerator
 def generate_cube_numbers(end):
         number = 2
 
-        while number **3 < end:
+        while number **3 <= end:
             yield number ** 3
             number += 1
 
