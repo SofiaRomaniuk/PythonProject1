@@ -7,6 +7,7 @@ class Group:
         self.number = number
         self.students = set()
 
+
     def add_student(self, student):
         self.students.add(student)
 
