@@ -16,7 +16,6 @@ class Group:
                 return student
         return None
 
-
     def delete_student(self, last_name):
         student = self.find_student(last_name)
         if student is not None:
